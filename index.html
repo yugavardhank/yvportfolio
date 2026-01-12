@@ -18,11 +18,26 @@
     <meta property="og:url" content="https://yugavardhank.me/">
     <meta property="og:image" content="https://yugavardhank.me/11.jpg">
     <meta property="og:site_name" content="K Yugavardhan Portfolio">
+        <meta property="og:image:secure_url" content="https://yugavardhank.me/11.jpg">
+        <meta property="og:image:alt" content="K Yugavardhan Portfolio cover image">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="K Yugavardhan - Portfolio | Tech, Business & Leadership">
     <meta name="twitter:description" content="Building, leading, and scaling at the intersection of technology, business, and leadership. Computer Science sophomore at The Apollo University. Open to internships and collaboration.">
     <meta name="twitter:image" content="https://yugavardhank.me/11.jpg">
     <link rel="canonical" href="https://yugavardhank.me/">
+
+        <!-- Redirect .tech domain to canonical .me domain -->
+        <script>
+            (function() {
+                var preferredHost = 'yugavardhank.me';
+                if (location.hostname === 'yugavardhank.tech') {
+                    var target = 'https://' + preferredHost + location.pathname + location.search + location.hash;
+                    if (location.href !== target) {
+                        location.replace(target);
+                    }
+                }
+            })();
+        </script>
 
     <!-- Social Meta Tags (single source of truth for previews) -->
     <!-- Duplicate OG block removed; values above are authoritative -->
